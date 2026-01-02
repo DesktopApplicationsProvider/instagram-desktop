@@ -1,0 +1,61 @@
+# =========================
+# Basic Site Settings
+# =========================
+
+title: "Instagram Desktop"
+description: "Official website for Instagram Desktop — a desktop client for Instagram."
+baseurl: "/instagram-desktop"                   # Leave blank if publishing at the root
+url: "https://DesktopApplicationsProvider.github.io" # Replace with your GitHub Pages URL
+
+# =========================
+# Theme Configuration
+# =========================
+
+theme: jekyll-theme-slate
+#trying new things
+
+# =========================
+# Navigation / SEO
+# =========================
+
+# Useful for generating proper sitemap metadata
+permalink: pretty
+
+# =========================
+# Optional (Custom Fields)
+# =========================
+
+# Social profiles — update with your links
+social:
+  github: "https://github.com/DesktopApplicationsProvider/instagram-desktop"
+#  twitter: "https://twitter.com/your_twitter"   # Optional
+#  linkedin: "https://linkedin.com/in/your_profile" # Optional
+
+# Optionally include Google Analytics tracking
+#google_analytics: "UA‑XXXXXXXXX‑X"  # Uncomment and replace with your ID
+
+# =========================
+# Plugins (if required)
+# =========================
+
+plugins:
+  - jekyll-feed                # Optional, if you want RSS feed
+  - jekyll-sitemap             # Optional
+  - jekyll-seo-tag
+
+# =========================
+# Excludes & Includes
+# =========================
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# =========================
+# Build Settings
+# =========================
+
+markdown: kramdown
+
