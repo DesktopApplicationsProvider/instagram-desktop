@@ -2,7 +2,9 @@
 
 Instagram for desktop is the same Instagram but for Windows as desktop application
 
-Instagram windows is a free photo and video sharing app available on desktop PC.
+Instagram Desktop is a free photo and video sharing app available on desktop PC.
+
+Read more on the [Official Instagram Desktop Website.](https://desktopapplicationsprovider.github.io/instagram-desktop/).
 
 1.   You can: 
      - upload photos or videos

@@ -3,17 +3,55 @@ layout: default
 title: Instagram Desktop Home Page | 
 permalink: /
 ---
+<style>
+  /* Use the existing container as a relative anchor */
+  .hero .container {
+    position: relative;
+  }
 
-<!-- =========================== -->
-<!-- Hero / Intro Section -->
+  .download-button-overlay {
+    background-color: #0090ff;
+    color: #ffffff !important;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    
+    /* Position it on the far right, vertically centered */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    z-index: 10;
+    transform: translateY(-130px); 
+  }
+
+  .download-button-overlay img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Ensure the text doesn't run into the button on medium screens */
+  .hero-heading, .hero-subheading {
+    white-space: nowrap;
+  }
+</style>
+
 <section class="hero primary">
   <div class="container">
     <h1 class="hero-heading">Instagram Desktop</h1>
     <p class="hero-subheading">Simple, desktop client for Instagram</p>
-    <p class="hero-cta">
-      <a href="{{ site.baseurl }}/installation" class="btn btn-lg btn-success">Get Started</a>
-      <a href="{{ site.baseurl }}/downloads" class="btn btn-lg btn-secondary">Downloads & Releases</a>
-    </p>
+
+    <a href="https://github.com/DesktopApplicationsProvider/instagram-desktop/releases/download/1.0/Instagram.desktop.install.exe"
+       class="download-button-overlay">
+       <img src="{{ site.baseurl }}/assets/images/download.png" alt="Download">
+       Download Instagram Desktop
+    </a>
   </div>
 </section>
 
@@ -32,6 +70,10 @@ permalink: /
     <p>
       Whether you’re a heavy social media user, power user, or simply want a native desktop view of your Instagram
       timeline, this application gives you the controls and accessibility you need — right from your desktop.
+    </p>
+    <p class="hero-cta">
+      <a href="{{ site.baseurl }}/installation" class="btn btn-lg btn-success">Get Started</a>
+      <a href="{{ site.baseurl }}/downloads" class="btn btn-lg btn-secondary">Downloads & Releases</a>
     </p>
 
   </div>
